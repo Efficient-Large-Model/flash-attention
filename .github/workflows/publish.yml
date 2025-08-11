@@ -4,6 +4,10 @@
 # - Deploy the wheels to the Github release
 # - Release the static code to PyPi
 # For more information see: https://help.github.com/en/actions/language-and-framework-guides/using-python-with-github-actions#publishing-to-package-registries
+permissions:
+  contents: write
+  packages: write
+  id-token: write  # If using OIDC for deployment
 
 name: Build wheels and deploy
 
